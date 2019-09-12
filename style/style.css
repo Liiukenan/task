@@ -1,0 +1,255 @@
+.refresh{
+    background: #A000CE url('../images/ic_refresh.png') no-repeat center;
+    background-size: 100%;
+}
+.get-money{
+    width: 5.4444rem;
+    height: 1.5556rem;
+    background: rgba(255,92,69,1);
+
+}
+.claim{
+    width: 3.3889rem;
+    height: 1.1667rem;
+}
+.date{
+    width: 2.0278rem;
+    height: 2.2222rem;
+}
+.sun{
+    width: 3.1389rem;
+}
+.sun img{
+    width: 1.3333rem;
+    height: 1rem;
+}
+.check-box{
+    width: 5.5556rem;
+    height: 1.4444rem;
+    position: relative;
+}
+.check-btn{
+    width: 5.5556rem;
+    height: 1.4444rem;
+    background: url('../images/btn_day_claim_able.png') no-repeat center;
+    background-size: 100% 100%;
+    
+}
+.check-btn:active{
+    background: url('../images/btn_day_claim_click.png') no-repeat center;
+    background-size: 100% 100%;
+}
+/* 不可点击状态 */
+.check-disabled{
+    width: 100%;
+    height: 1.4444rem;
+    background: rgba(255,219,103,0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: .75rem;
+    display: none;
+}
+.claim-btn input{
+    width: 3.3333rem;
+    height: 1.1111rem;
+    background: url('../images/btn_week_claim_disable.png') no-repeat center;
+    background-size: 100% 100%; 
+}
+.claim-box{ 
+    border-top: .0556rem  dashed #5B125C;
+}
+/* 可点击状态 */
+.claim-box-active{
+    background-image: linear-gradient(135deg, #FF31BD 0%, #CA16FF 100%);
+    box-shadow: 0 2px 6px 0 rgba(145,0,154,0.30);
+}
+.claim-box-active .claim-btn input{
+    background: url('../images/btn_week_claim_able.png') no-repeat center;
+    background-size: 100% 100%;
+    color: rgba(0,0,0,0.80);
+}
+.title-checkin{
+    width: 8.7778rem;
+    height: 1.5rem;
+    position: absolute;
+    left: 50%;
+    top: -0.5556rem;
+    transform: translateX(-50%)
+}
+.title-checkin img{
+    width: 1.0556rem;
+    height: 1.2222rem;
+}
+.title-checkin .cont{
+    position: absolute;
+    width: 7.7778rem;
+    height: 1.2222rem;
+    background: rgba(255,210,101,1);
+    left: 50%;
+    transform: translateX(-50%);
+    top: -0.2778rem;
+    border-radius: .1111rem;
+}
+.title-checkin .cont-purple{
+    background: #CA16FF;
+}
+.press{
+    height: .5556rem;
+    transition: all 1s;
+    width: 100%;
+    overflow: hidden;
+}
+.progress{
+    height: .5556rem;
+    left: 0;
+    top: 0;
+    width: 0%;
+    transition: all 1s;
+    border-top-left-radius: .2778rem;
+    border-bottom-left-radius: .2778rem;
+    background: rgba(233,157,255,1);
+}
+/* 已经领取过 */
+.signed-press{
+    background: rgba(245,212,255,1);
+}
+.date-time{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.go input,.go .btn{
+    width: 2rem;
+    height: .7778rem;
+}
+.go input.bg-purple{
+    background:rgba(202,22,255,1);
+    color: #fff;
+}
+.go-mask{
+    width: 100%;
+    display: none;
+    height: .7778rem;
+    top: 0;
+    left: 0;
+    background: rgba(255,255,255,0.8);
+}
+.egg{
+    display: none;
+}
+.mask{
+    display: none;
+}
+/* 未签到 */
+.unsigned{
+    position: relative;
+    background: rgba(233,157,255,1);
+}
+.unsigned .fc-pink{
+    color: rgba(0,0,0,0.10);
+}
+.unsigned .mask{
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2.2222rem;
+    background: rgba(255,255,255,0.40);
+    border-radius: .2222rem;
+}
+
+/* 已签到 */
+.signed{
+    background: #E99DFF;
+    position: relative;
+}
+.signed .fc-pink,.gift .fc-pink{
+    color: #fff;
+}
+
+.signed-icon{
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.signed .signed-icon{
+    display: block;
+}
+.signed-icon img{
+    width: .5556rem;
+    height: .5556rem;
+}
+
+/* 可领礼物 */
+.gift{
+    background-image: linear-gradient(135deg, #FF31BD 0%, #CA16FF 100%);
+    box-shadow: 0 2px 6px 0 rgba(145,0,154,0.30);
+}
+.gift .coins{
+    display: none;
+}
+.gift .egg{
+    display: flex;
+    justify-content: center;
+}
+.gift .egg img{
+    width: .9444rem;
+    height: 1.1111rem;
+}
+
+.get-gift{
+    width: 100%;
+    background: rgba(0,0,0,0.60);
+    position: fixed;
+    left: 0;
+    top: 0;
+    top: 0;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: all 0.4s;
+    height: 0;
+    overflow: hidden;
+    
+}
+.get-gift-active{
+    opacity: 1;
+    height: auto;
+    display: flex;
+}
+.reward{
+    width: 8.3333rem;
+    height: 7rem;
+    border-radius: .3333rem;
+    background: linear-gradient(180deg, #CA16FF 0%, #FF1666 100%);
+    background-size: 6.5556rem;
+    position: relative;
+}
+.reward-box{
+    width: 8.3333rem;
+    height: 7rem;
+    background:url('../images/shine.png') no-repeat center;
+    background-size: 6.5556rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    
+}
+.reward-btn button{
+    width: 7rem;
+    height: 1.3333rem;
+    background: url('../images/btn_pop_close_able.png') no-repeat;
+    background-size: 100% 100%;
+}
+.reward-btn button:active{
+    background: url('../images/btn_pop_close_click.png') no-repeat;
+    background-size: 100% 100%;
+
+}
+
+
